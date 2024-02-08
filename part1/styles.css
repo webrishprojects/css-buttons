@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  padding: 0.625rem;
+  width: 12rem;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  right: 2rem;
+  font-weight: lighter;
+  font-size: 1.25rem;
+  position: relative;
+  transition: all 0.8s;
+}
+
+button span:before {
+  position: absolute;
+  width: 2rem;
+  height: 1px;
+  background: white;
+  content: "";
+  top: 50%;
+  transition: 0.8s;
+  left: 0.625rem;
+  opacity: 0;
+}
+
+button span:after {
+  position: absolute;
+  width: 2rem;
+  height: 1px;
+  background: white;
+  content: "";
+  top: 50%;
+  transition: 0.8s;
+  right: -3.75rem;
+}
+
+button:hover {
+  background-color: #c6a87d;
+  border: 1px solid #c6a87d;
+}
+
+button:hover span {
+  padding-left: 4.06rem;
+  right: 0;
+}
+
+button:hover span:before {
+  opacity: 1;
+}
+
+button:hover span:after {
+  right: 0.625rem;
+  opacity: 0;
+}
